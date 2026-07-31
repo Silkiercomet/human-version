@@ -126,23 +126,23 @@
 
   /* ---------------- Wire up events ---------------- */
 
-  openTriggers.forEach(function (trigger) {
-    trigger.addEventListener('click', openModal);
-  });
+  // openTriggers.forEach(function (trigger) {
+  //   trigger.addEventListener('click', openModal);
+  // });
 
-  if (closeBtn) {
-    closeBtn.addEventListener('click', closeModal);
-  }
+  // if (closeBtn) {
+  //   closeBtn.addEventListener('click', closeModal);
+  // }
 
-  if (overlay) {
-    overlay.addEventListener('click', function (event) {
-      if (event.target === overlay) {
-        closeModal();
-      }
-    });
-  }
+  // if (overlay) {
+  //   overlay.addEventListener('click', function (event) {
+  //     if (event.target === overlay) {
+  //       closeModal();
+  //     }
+  //   });
+  // }
 
-  if (form) {
-    form.addEventListener('submit', handleSubmit);
-  }
+  // if (form) {
+  //   form.addEventListener('submit', handleSubmit);
+  // }
 })();
