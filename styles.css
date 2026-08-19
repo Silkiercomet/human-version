@@ -365,7 +365,7 @@ button {
 
 .form-section__intro {
   margin: 0 auto 2rem;
-  max-width: 34rem;
+  max-width: 30rem;
   text-align: center;
   color: var(--color-text-muted);
   line-height: var(--lh-relaxed);
