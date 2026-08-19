@@ -438,6 +438,32 @@ textarea.form__input {
   pointer-events: none;
 }
 
+/* ---------- Toast ---------- */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%) translateY(1rem);
+  max-width: min(90vw, 26rem);
+  padding: 0.875rem 1.25rem;
+  background: var(--color-grey);
+  color: var(--color-white);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: var(--btn-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-base), transform var(--transition-base);
+  z-index: 200;
+}
+
+.toast--visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   text-align: center;
